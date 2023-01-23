@@ -40,6 +40,8 @@ body {
 /* Знімаємо стилізацію спсику через додатковий клас list */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Ховаєммо заголовок секції "наші переваги" */
@@ -61,6 +63,8 @@ body {
 .navigation,
 .navigation a {
   color: var(--title-text-color);
+  padding: 0;
+  margin: 0;
 }
 
 /* Властивості ховера посилань навігації */
@@ -75,6 +79,8 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  padding: 0;
+  margin: 0;
 }
 /* Властивості навігації */
 .navigation.list .list {
@@ -119,6 +125,8 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
 }
 
 /* Задаємо колір та фон для кнопки головноно героя*/
@@ -131,6 +139,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: var(--cursor-pointer);
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  min-width: 169px;
+min-height: 56px;
 }
 
 /* Властивості наведення на кнопку героя */
@@ -142,6 +154,7 @@ body {
 /* Фон для секції головного героя */
 .hero {
   background-color: var(--hero-background-color);
+  text-align: center;
 }
 
 /* Задаємо  колір тексту для футера */
@@ -149,6 +162,8 @@ body {
   color: var(--color-footer-text);
   font-size: 16px;
   line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 
 .footer {
@@ -178,6 +193,8 @@ body {
 .section-text {
   font-size: 16px;
   line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 
 /*/* Властивості заголовку секції What are we doing*/
@@ -186,6 +203,8 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
 }
 
 /* Властивосты заголовків секцій */
@@ -194,6 +213,14 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+}
+
+/* Властивості навігації  */
+.contact {
+  padding: 0;
+  margin: 0;
 }
 
 /* Прибиражмо підкреслення у посилань */
@@ -255,4 +282,14 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* Властивосты блочноъ моделі */
+
+.container {
+  width: 1128px;
+  margin-left: 156px;
+  margin-right: 156px;
+  /* Обводка для стилізації
+  outline: solid; */
 }
