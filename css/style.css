@@ -65,11 +65,18 @@ body {
   color: var(--title-text-color);
   padding: 0;
   margin: 0;
+  display: flex;
+}
+
+.container.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Властивості ховера посилань навігації */
-.navigation a:hover,
-.navigation a:active .navigation a:focus {
+.link:hover,
+.link:focus,
+.link.current {
   color: var(--navigation-hover-color);
 }
 
@@ -79,14 +86,37 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  padding: 0;
+padding-bottom: 8px;
   margin: 0;
 }
 /* Властивості навігації */
 .navigation.list .list {
+  display: flex;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+}
+
+.navigation.list .list + .list{
+  margin-left: 40px;
+}
+
+.navigation.list {
+  display: flex;
+}
+
+.contact.list {
+  display: flex;
+}
+
+/* ВІдступ між контактами */
+.contact.list li+li {
+  margin-left: 40px;
 }
 
 /* Властивості Лого */
@@ -98,6 +128,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
+  align-items: center;
 }
 
 /* Задаємо колір для контактів */
@@ -125,7 +156,8 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-transform: capitalize;
-  padding: 0;
+  padding-top: 188px;
+  padding-bottom: 48px;
   margin: 0;
 }
 
@@ -155,6 +187,9 @@ min-height: 56px;
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
+  min-width: 1440px;
+  min-height: 600px;
+  margin-bottom: 120px;
 }
 
 /* Задаємо  колір тексту для футера */
@@ -164,10 +199,13 @@ min-height: 56px;
   line-height: 1.5;
   padding: 0;
   margin: 0;
+  padding-top: 16px;
+  width: 264px;
 }
 
 .footer {
   background-color: var(--title-text-color);
+  min-height: 310px;
 }
 
 .logo-link-footer {
@@ -178,6 +216,8 @@ min-height: 56px;
   font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
+  display: inline-block;
+  margin-top: 100px;
 }
 
 /* Задаємо фоновий колір для команди */
@@ -187,6 +227,8 @@ min-height: 56px;
 
 .team {
   background-color: var(--background-color-teamcard);
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 /* Властивості абзаців секцій */
@@ -197,14 +239,22 @@ min-height: 56px;
   margin: 0;
 }
 
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 32px;
+  margin: 0;
+}
+
 /*/* Властивості заголовку секції What are we doing*/
 .title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
-  padding: 0;
-  margin: 0;
+  padding-bottom: 72px;
+margin: 0;
+text-align: center;
 }
 
 /* Властивосты заголовків секцій */
@@ -213,8 +263,9 @@ min-height: 56px;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
-  padding: 0;
+  padding-bottom: 72px;
   margin: 0;
+  text-align: center;
 }
 
 /* Властивості навігації  */
@@ -287,9 +338,32 @@ a {
 /* Властивосты блочноъ моделі */
 
 .container {
-  width: 1128px;
-  margin-left: 156px;
-  margin-right: 156px;
+  width: 1158px;
+  padding: 0 15px;
+margin: 0 156px;
   /* Обводка для стилізації
   outline: solid; */
+}
+
+.work-example {
+  margin-bottom: 120px;
+}
+
+.advantages {
+  margin-bottom: 120px;
+}
+
+.team-cards {
+  padding-bottom: 72px;
+}
+
+.portfolio-butons {
+  min-width: 586px;
+  margin-left: 427px;
+  margin-right: 427px;
+  margin-bottom: 72px;
+}
+
+.filter {
+  margin-bottom: 120px;
 }
