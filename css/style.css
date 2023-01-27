@@ -397,13 +397,29 @@ justify-content: space-between;
   padding-bottom: 72px;
 }
 
-.portfolio-butons {
-  min-width: 586px;
-  margin-left: 427px;
-  margin-right: 427px;
-  margin-bottom: 72px;
-}
-
 .filter {
   margin-bottom: 120px;
 }
+
+.portfolio-butons {
+
+}
+
+.filter.list {
+  display: flex;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  width: 586px;
+height: 48px;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+
+
+flex-direction: row;
+}
+
+.filter-button {
+  padding: 12px 24px;
+}
+
