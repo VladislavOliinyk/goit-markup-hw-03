@@ -68,6 +68,12 @@ body {
   display: flex;
 }
 
+.navigation a {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
 .container.main-nav {
   display: flex;
   align-items: center;
@@ -93,8 +99,6 @@ margin: 0;
 .navigation.list .list {
   display: flex;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
   
   font-weight: 500;
   font-size: 16px;
