@@ -200,7 +200,6 @@ body {
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
-  width: 1440px;
   height: 600px;
   margin-bottom: 120px;
 }
