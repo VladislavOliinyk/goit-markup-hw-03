@@ -443,7 +443,7 @@ a {
 }
 
 .portfolio-item {
-  width: 360px;
+  width: calc((100%-48px) \ 3);
   height: 420px;
   margin-right: 24px;
   margin-bottom: 48px;
