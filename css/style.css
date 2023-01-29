@@ -28,6 +28,7 @@
   /* Властивість наведення курсора на посилання  */
   --cursor-pointer: pointer;
   --header-border-line-color:#E7E9FC;
+  --portfolio-border-line-color:#E7E9FC;
 }
 
 /* Властивості фону та основного тексту */
@@ -446,7 +447,6 @@ a {
   height: 420px;
   margin-right: 24px;
   margin-bottom: 48px;
-  border-bottom: 1px solid #E7E9FC;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -459,4 +459,10 @@ a {
 
 img {
   display: block;
+}
+
+.portfolio-bottom {
+  border-bottom: 1px solid var(--portfolio-border-line-color);
+  border-left: 1px solid var(--portfolio-border-line-color);
+  border-right: 1px solid var(--portfolio-border-line-color);
 }
