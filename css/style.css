@@ -50,6 +50,10 @@ ul {
   padding-left: 0;
 }
 
+header {
+  border-bottom: 1px solid var(--header-border-line-color);
+}
+
 /* Властивості фону та основного тексту */
 body {
   background-color: var(--background-color);
@@ -97,7 +101,6 @@ body {
 .container.main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--header-border-line-color);
 }
 
 /* Властивості ховера посилань навігації */
